@@ -1,6 +1,6 @@
 import random
 from asyncio import TimeoutError
-from typing import Optional, Union
+from typing import Optional, Union, List
 
 import discord
 from discord.ext import commands
@@ -18,7 +18,7 @@ from discord_slash.utils.manage_components import (
 async def Paginator(
     bot: commands.bot,
     ctx: SlashContext,
-    pages: list[discord.Embed],
+    pages: List[discord.Embed],
     content: Optional[str] = None,
     prevLabel: str = "Previous",
     nextLabel: str = "Next",
